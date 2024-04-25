@@ -16,5 +16,5 @@ Els objectius són:
 
 - Saber de l'existència de distints llenguatges
 
-[« Anterior](index.md) | [Següent »](1_fitxers_tradicionals.md)
+[Següent »](1_fitxers_tradicionals.md)
 
