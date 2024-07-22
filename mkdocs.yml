@@ -1,15 +1,19 @@
 site_url : https://asalvadorc.github.io/BBDD_Tema1
+
 site_name: BD - Bases de Dades
+
 theme: 
   name: readthedocs
   logo: assets/logocaminas.png
+
 nav:
-  - Tema 1-Introducció:
-    - Objectius: BD-T01_Introduccio/objectius.md
-    - 1. Fitxers tradicionals: BD-T01_Introduccio/1_fitxers_tradicionals.md
-    - 2. Concepte de Base de Dades: BD-T01_Introduccio/2_concepte_de_base_de_dades.md
-    - 3. Característiques desitjables d'un SGBD: BD-T01_Introduccio/3_caracterstiques_desitjables_dun_sgbd.md
-    - 4. Models de dades: BD-T01_Introduccio/4_models_de_dades.md
-    - 5. Arquitectura a 3 nivells: BD-T01_Introduccio/5_arquitectura_a_3_nivells.md
-    - 6. Llenguatges del SGBD: BD-T01_Introduccio/6_llenguatges_del_sgbd.md
-    - 7. Classificacions dels SGBD: BD-T01_Introduccio/7_classificacions_dels_sgbd.md
+  - Tema 1-Introducció: index.md
+  - Objectius: BD-T01_Introduccio/objectius.md
+  - 1. Fitxers tradicionals: BD-T01_Introduccio/1_fitxers_tradicionals.md
+  - 2. Concepte de Base de Dades: BD-T01_Introduccio/2_concepte_de_base_de_dades.md
+  - 3. Característiques desitjables d'un SGBD: BD-T01_Introduccio/3_caracterstiques_desitjables_dun_sgbd.md
+  - 4. Models de dades: BD-T01_Introduccio/4_models_de_dades.md
+  - 5. Arquitectura a 3 nivells: BD-T01_Introduccio/5_arquitectura_a_3_nivells.md
+  - 6. Llenguatges del SGBD: BD-T01_Introduccio/6_llenguatges_del_sgbd.md
+  - 7. Classificacions dels SGBD: BD-T01_Introduccio/7_classificacions_dels_sgbd.md
+  

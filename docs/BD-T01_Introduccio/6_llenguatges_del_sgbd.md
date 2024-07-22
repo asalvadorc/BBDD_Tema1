@@ -23,6 +23,5 @@ Hi ha dues maneres d'aplicar les sentències dels llenguatges.
 
 - Immergits en un altre llenguatge de propòsit general, anomenat llenguatge ***amfitrió***, on entre els procediment s'inclouen les sentències del DML, anomenat llenguatge ***hoste*** o ***subllenguatge***. Normalment s'obtenen registres individuals de la B.D., per la qual cosa s'hauran d'utilitzar bucles per fer tota una consulta. Per això s'anomenen **de registre a registre**.
 
-[« Anterior](5_arquitectura_a_3_nivells.md) | [Següent »](7_classificacions_dels_sgbd.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)

@@ -29,7 +29,6 @@ Anem a ampliar l'anterior arquitectura a tres nivells per incorporar tot el proc
 
 On hem incorporat, fora de l'arquitectura a 3 nivells, és a dir fora del SGBD, l'esquema conceptual, que seria la concepció de la B.D. en un model d'alt nivell com el Model E/R. A partir d'ell realitzaríem l'esquema lògic (amb un model d'implantació). Després ja es passaria a l'esquema intern, i també als esquemes externs. 
 
-[« Anterior](4_models_de_dades.md) | [Següent »](6_llenguatges_del_sgbd.md)
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 

@@ -9,6 +9,6 @@ Al llarg de la història s'han proposat molts models de dades, tants que s'haura
 - **Models de baix nivell** o **físics**: proporcionen detalls de com es guardaran les dades a l'ordinador.
 - Models de **representació** o **implementació**: estan a mig camí dels dos anteriors, ja que els conceptes els poden entendre els usuaris finals, encara que no estan massa allunyats de la manera com es guarden les dades a l'ordinador. Són els més utilitzats en els SGBD actuals. Es poden destacar el **Jeràrquic**, el **de Xarxa** (o **Codasyl**) i el **Relacional**, que és el que nosaltres veurem en profunditat.
 
-[« Anterior](3_caracterstiques_desitjables_dun_sgbd.md) | [Següent »](5_arquitectura_a_3_nivells.md)
+
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)

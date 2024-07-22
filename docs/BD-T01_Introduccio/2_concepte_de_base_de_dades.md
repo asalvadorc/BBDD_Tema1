@@ -75,7 +75,4 @@ També anomenats **paramètrics**, solen fer consultes i actualitzacions constan
 Utilitzen la B.D. de tant en tant, i cada vegada per a obtenir una informació diferent. El més normal és que utilitzen un llenguatge de consulta de la B.D. avançat però senzill d'utilitzar.
 
 
-
-[« Anterior](1_fitxers_tradicionals.md) | [Següent »](3_caracterstiques_desitjables_dun_sgbd.md)
-
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)

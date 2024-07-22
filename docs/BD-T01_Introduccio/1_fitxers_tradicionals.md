@@ -104,6 +104,6 @@ Els problemes més importants que porta aquest sistema que ha anat creixent seri
 
 Tornarem a comentar els problemes quan vegem la comparació entre fitxers tradicionals i Bases de Dades.
 
-[« Anterior](objectius.md) | [Següent »](2_concepte_de_base_de_dades.md)
+
 
 Llicenciat sota la [Llicència Creative Commons Reconeixement NoComercial CompartirIgual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
