@@ -17,9 +17,9 @@ struct TEmpleat
 char nom[30]; 
 char adreca[30]; 
 char telefon[10]; 
-char data\_n[10]
+char datan[10]
 
-} v\_empleat; 
+} vempleat; 
 
 FILE \*pFEmpleats; 
 ---
@@ -45,11 +45,11 @@ struct TEmpleat
 char nom[30]; 
 char adreca[30]; 
 char telefon[10]; 
-char data\_n[10];
+char datan[10];
 
 int sou;
 
-} v\_empleat; 
+} vempleat; 
 
 FILE \*pFEmpleats; 
 ...
@@ -70,7 +70,7 @@ char nom[30];
 char telefon[10]; 
 char departament[20]
 
-} v\_empleat2; 
+} vempleat2; 
 
 FILE \*pFEmpleats2; 
 ...

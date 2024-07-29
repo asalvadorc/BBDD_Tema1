@@ -6,6 +6,9 @@ theme:
   name: readthedocs
   logo: assets/logocaminas.png
 
+extra_css:
+  - css/extra.css  
+
 nav:
   - Tema 1-Introducció: index.md
   - Objectius: BD-T01_Introduccio/objectius.md
