@@ -3,7 +3,7 @@
 Per a millorar els problemes que se'ns presentaven amb els fitxers
 tradicionals introduirem el concepte de Base de Dades.
 
-2.1 Definició
+## 2.1 Definició
 
 Hi ha moltes definicions de Bases de Dades. Intentarem donar una que no sigue
 massa pesada.
@@ -43,7 +43,7 @@ per mig de processos (programes, formularis, ...) o bé de forma interactiva
 (per exemple amb consultes SQL). Alguns autors anomenen al conjunt de la Base
 de Dades i el SGBD com **Sistema de Base de Dades**.
 
-2.2 Comparació amb fitxers tradicionals
+## 2.2 Comparació amb fitxers tradicionals
 
 Una vegada hem vist la definició de Base de Dades i alguna de les seues
 característiques anem a comparar amb els fitxers tradicionals per veure els
