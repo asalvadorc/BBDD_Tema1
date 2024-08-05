@@ -71,43 +71,43 @@ Els inconvenients que suposa la utilització de B.D. són els següents:
 fitxers tradicionals, però si és d'una certa envergadura o s'ha d'anar
 ampliant al llarg del temps, convé una B.D.
 
-2.3 Usuaris de la BD
+## 2.3 Usuaris de la BD
 
 Els múltiples usuaris que poden utilitzar la B.D. són de distints tipus. Anem
 a fer una classificació d'aquestos. Aquesta classificació agrupa dos grans
 blocs: els usuaris amb coneixements informàtics i els usuaris que no en tenen
 (o no tenen per què tenir-ne).
 
-**A.****Usuaris informàtics**.
+**A.** **Usuaris informàtics**.
 
-> **A.1****Dissenyadors**.
+> **A.1** **Dissenyadors**.
 
 > > > Encarregats de dissenyar la B.D.: triar el tipus d'informació
 > necessària, organitzar-la en estructures adequades.
 
-> > **A.2****Administradors**.
+>  **A.2** **Administradors**.
 
-> > És l'encarregat de vetllar pel bon funcionament del sistema: administrar
+> > > És l'encarregat de vetllar pel bon funcionament del sistema: administrar
 > els usuaris i permisos, protegir la B.D. d'errades (fent còpies de
 > seguretat, ..), optimitzar el sistema, etc. És a dir molta feina.
 
-> **A.3****Analistes i programadors**.
+> **A.3** **Analistes i programadors**.
 
 > > > Estudien els requeriments dels usuaris finals per a fer programes,
 > formularis, ... que possibiliten la feina d'aquestos.
 
-> **B.****Usuaris finals**.
+**B.** **Usuaris finals**.
 
 > Són les persones que necessiten l'accés a la B.D. per a introduir dades,
 > actualitzar-les, consultar-les, generar informes, ... Entre ells distingim:
 
-> **B.1****Habituals**.
+> **B.1** **Habituals**.
 
 > > També anomenats **paramètrics** , solen fer consultes i actualitzacions
 > constants (sempre les mateixes). Normalment els analistes i programadors els
 > faran els programes o formularis per a fer la seua feina.
 
-> **B.2****Esporàdics**.
+> **B.2** **Esporàdics**.
 
 > > Utilitzen la B.D. de tant en tant, i cada vegada per a obtenir una
 > informació diferent. El més normal és que utilitzen un llenguatge de
