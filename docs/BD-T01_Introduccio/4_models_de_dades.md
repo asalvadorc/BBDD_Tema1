@@ -1,4 +1,4 @@
-# 4\. Models de dades
+# 5. Models de dades
 
 Per a poder definir l'estructura de la B.D. ens farà falta alguna ferramenta,
 alguna manera d'expressar el que veiem en el món real.

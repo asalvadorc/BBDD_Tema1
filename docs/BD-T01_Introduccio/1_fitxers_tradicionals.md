@@ -22,20 +22,21 @@ exemples merament il·lustratius, que no heu d'implementar
 Per exemple, si són en llenguatge C++, la definició haurà de ser com la
 següent:
 
+```
 ...  
 struct TEmpleat  
 { char dni[10];  
 
-> char nom[30];  
-> char adreca[30];  
-> char telefon[10];  
-> char data_n[10]
+  char nom[30];  
+  char adreca[30];  
+  char telefon[10];  
+  char data_n[10]
 
 } v_empleat;  
   
 FILE *pFEmpleats;  
 ...
-
+```
 I un exemple del contingut d'aquest fitxer podria ser
 
 ![](T1_1_1.1.png)
@@ -50,23 +51,23 @@ mateixa. Aquest procés de substitució seria:
   * Fer un programeta per a passar les dades del fitxer vell al fitxer nou
   * Esborrar el vell i en tot cas canviar el nom del nou.
   * Després s'hauran de modificar tots els programes que utilitzaven el fitxer per a que l'estructura del fitxer siga la correcta, tornar a compilar-los, ...
-
+```
 ...  
 struct TEmpleat  
 { char dni[10];  
 
-> char nom[30];  
-> char adreca[30];  
-> char telefon[10];  
-> char data_n[10];
+  char nom[30];  
+  char adreca[30];  
+  char telefon[10];  
+  char data_n[10];
 
-> int sou;
+  int sou;
 
 } v_empleat;  
   
 FILE *pFEmpleats;  
 ...
-
+```
 I un exemple del contingut d'aquest fitxer podria ser
 
 ![](T1_1_2.png)
@@ -76,20 +77,20 @@ mantenir informació dels distints departaments, i els empleats que pertanyen.
 Potser per a no haver de repetir el procés d'adequació, es construeix un
 fitxer nou d'empleats on està el DNI de l'empleat, el nom, el telèfon i el
 departament al qual pertany, ja que aquesta és la informació que li interessa.
-
+```
 ...  
 struct TEmpleat2  
 { char dni[10];  
 
-> char nom[30];  
-> char telefon[10];  
-> char departament[20]
+  char nom[30];  
+  char telefon[10];  
+  char departament[20]
 
 } v_empleat2;  
   
 FILE *pFEmpleats2;  
 ...
-
+```
 I un exemple del contingut d'aquest fitxer podria ser ara:
 
 ![](T1_1_3.png)
