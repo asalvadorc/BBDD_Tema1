@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema1/BD-T01_Introduccio/2_concepte_de_base_de_dades/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>2. Concepte de Base de Dades - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2. Concepte de Base de Dades";
+        var mkdocs_page_input_path = "BD-T01_Introduccio/2_concepte_de_base_de_dades.md";
+        var mkdocs_page_url = "/BBDD_Tema1/BD-T01_Introduccio/2_concepte_de_base_de_dades/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Tema 1-Introducció Bases de Dades</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../objectius/">Objectius</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../1_fitxers_tradicionals/">1. Fitxers tradicionals</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">2. Concepte de Base de Dades</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#21-definicio">2.1 Definició</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#22-comparacio-amb-fitxers-tradicionals">2.2 Comparació amb fitxers tradicionals</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#23-usuaris-de-la-bd">2.3 Usuaris de la BD</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../3_caracterstiques_desitjables_dun_sgbd/">3. Característiques desitjables d'un SGBD</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../5_arquitectura_a_3_nivells/">4. Arquitectura a 3 nivells</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../4_models_de_dades/">5. Models de dades</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../6_llenguatges_del_sgbd/">6. Llenguatges del SGBD</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../7_classificacions_dels_sgbd/">7. Classificacions dels SGBD</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">2. Concepte de Base de Dades</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="2-concepte-de-base-de-dades">2. Concepte de Base de Dades</h1>
+<p>Per a millorar els problemes que se'ns presentaven amb els fitxers
+tradicionals introduirem el concepte de Base de Dades.</p>
+<h2 id="21-definicio">2.1 Definició</h2>
+<p>Hi ha moltes definicions de Bases de Dades. Intentarem donar una que no sigue
+massa pesada.</p>
+<p>Una <strong>Base de Dades</strong> és un conjunt de dades relacionades entre elles,
+integrat en una única estructura global que és independent dels programes que
+la utilitzen i sense redundàncies innecessàries.</p>
+<p>Comentem un poc aquesta definició. El primer comentari és sobre les dades. No
+intentarem agafar totes les dades del món, sinó únicament sobre les coses que
+volem estudiar, i d'elles únicament les dades interessants, per aconseguir el
+propòsit perseguit. Per tant, una Base de Dades té una font de la qual es
+deriven les dades i uns usuaris als quals interessen les dades.</p>
+<p>Per la pròpia definició, la Base de Dades es podria crear i mantenir
+manualment (pensem en les fitxes tradicionals d'una biblioteca). Es podria
+crear i mantenir també per mig d'un grup de programes d'aplicació realitzats
+específicament per aquesta feina, però el més normal, i el que ens interessa a
+nosaltres és que açò es faça per mig d'un Sistema Gestor de Bases de Dades.</p>
+<p>Un <strong>Sistema Gestor de Bases de Dades</strong> (<strong>SGBD</strong> ; en anglès <em>DataBase
+Management System: DBMS</em>) és un conjunt de programes que permet als usuaris
+crear i mantenir Bases de Dades. Així la Base de Dades són les nostres dades
+(organitzades) i el SGBD serien productes com ACCESS, POSTGRESQL o ORACLE que
+ens permeten crear i mantenir aquesta Base de Dades.</p>
+<p><img alt="" src="../T1_2_1.png" /></p>
+<p>Per la figura ja veiem que la Base de Dades s'organitza en dos grans blocs, un
+és el <strong>catàleg</strong> o <strong>diccionari de dades</strong> , on està l'estructura i tipus de
+les dades. En l'altre estan les pròpies dades. Per tant veiem que l'estructura
+de les dades va amb la pròpia Base de Dades.</p>
+<p>Totes les peticions d'accés a les dades no es fan directament, sinó que es
+demanen al SGBD, que és qui s'encarrega d'accedir a elles. L'accés es pot fer
+per mig de processos (programes, formularis, ...) o bé de forma interactiva
+(per exemple amb consultes SQL). Alguns autors anomenen al conjunt de la Base
+de Dades i el SGBD com <strong>Sistema de Base de Dades</strong>.</p>
+<h2 id="22-comparacio-amb-fitxers-tradicionals">2.2 Comparació amb fitxers tradicionals</h2>
+<p>Una vegada hem vist la definició de Base de Dades i alguna de les seues
+característiques anem a comparar amb els fitxers tradicionals per veure els
+avantatges.</p>
+<ul>
+<li>
+<p>Una Base de Dades és autodescriptiva, és a dir la definició de l'estructura, tipus de dades, etc. forma part de la pròpia B.D. (el <strong>diccionari de dades</strong>). En els fitxers tradicionals l'estructura d'aquestos havia d'anar en cada programa.</p>
+</li>
+<li>
+<p>Independència de les dades dels programes. És conseqüència de l'anterior. Així, en una B.D., la modificació de l'estructura (afegint algun camp o modificant-ne algun) no afecta als programes que puguen accedir a ella. Ja havíem vist que no era així en els fitxers tradicionals.</p>
+</li>
+<li>
+<p>No hi ha redundància, o molt poca. Potser convenient un poc de redundància per un millor rendiment, però aquesta pot ser controlada (per a evitar inconsistències, ...)</p>
+</li>
+<li>
+<p>Múltiples vistes d'usuari. Podríem pensar que al concentrar en una única B.D. totes les dades es perd la visió particular d'un usuari (que en fitxers tradicionals són el fitxers individuals de cadascun d'ells). Però no és així, ja que en les B.D. es poden definir vistes, que són la part de les dades que li interessen a un usuari determinat.</p>
+</li>
+<li>
+<p>Compartiment de les dades per part de molts usuaris, amb accés simultani sobre elles. Haurà d'haver en el software un control de concurrència, per assegurar que l'actualització simultània d'uns quants usuaris siga correcta.</p>
+</li>
+</ul>
+<p>Els inconvenients que suposa la utilització de B.D. són els següents:</p>
+<ul>
+<li>
+<p>El Hardware i el software són més costosos.</p>
+</li>
+<li>
+<p>Necessitat de personal especialitzat.</p>
+</li>
+<li>
+<p>La implantació és més llarga i difícil, i per tant és una solució bona a mig i llarg termini.</p>
+</li>
+</ul>
+<p>És a dir, que si és una aplicació senzilla, potser siga convenient utilitzar
+fitxers tradicionals, però si és d'una certa envergadura o s'ha d'anar
+ampliant al llarg del temps, convé una B.D.</p>
+<h2 id="23-usuaris-de-la-bd">2.3 Usuaris de la BD</h2>
+<p>Els múltiples usuaris que poden utilitzar la B.D. són de distints tipus. Anem
+a fer una classificació d'aquestos. Aquesta classificació agrupa dos grans
+blocs: els usuaris amb coneixements informàtics i els usuaris que no en tenen
+(o no tenen per què tenir-ne).</p>
+<p><strong>A.</strong> <strong>Usuaris informàtics</strong>.</p>
+<blockquote>
+<p><strong>A.1</strong> <strong>Dissenyadors</strong>.</p>
+<blockquote>
+<blockquote>
+<p>Encarregats de dissenyar la B.D.: triar el tipus d'informació
+necessària, organitzar-la en estructures adequades.</p>
+</blockquote>
+</blockquote>
+<p><strong>A.2</strong> <strong>Administradors</strong>.</p>
+<blockquote>
+<blockquote>
+<p>És l'encarregat de vetllar pel bon funcionament del sistema: administrar
+els usuaris i permisos, protegir la B.D. d'errades (fent còpies de
+seguretat, ..), optimitzar el sistema, etc. És a dir molta feina.</p>
+</blockquote>
+</blockquote>
+<p><strong>A.3</strong> <strong>Analistes i programadors</strong>.</p>
+<blockquote>
+<blockquote>
+<p>Estudien els requeriments dels usuaris finals per a fer programes,
+formularis, ... que possibiliten la feina d'aquestos.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>B.</strong> <strong>Usuaris finals</strong>.</p>
+<blockquote>
+<p>Són les persones que necessiten l'accés a la B.D. per a introduir dades,
+actualitzar-les, consultar-les, generar informes, ... Entre ells distingim:</p>
+<p><strong>B.1</strong> <strong>Habituals</strong>.</p>
+<blockquote>
+<p>També anomenats <strong>paramètrics</strong> , solen fer consultes i actualitzacions
+constants (sempre les mateixes). Normalment els analistes i programadors els
+faran els programes o formularis per a fer la seua feina.</p>
+</blockquote>
+<p><strong>B.2</strong> <strong>Esporàdics</strong>.</p>
+<blockquote>
+<p>Utilitzen la B.D. de tant en tant, i cada vegada per a obtenir una
+informació diferent. El més normal és que utilitzen un llenguatge de
+consulta de la B.D. avançat però senzill d'utilitzar.</p>
+</blockquote>
+</blockquote>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../1_fitxers_tradicionals/" class="btn btn-neutral float-left" title="1. Fitxers tradicionals"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3_caracterstiques_desitjables_dun_sgbd/" class="btn btn-neutral float-right" title="3. Característiques desitjables d'un SGBD">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../1_fitxers_tradicionals/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../3_caracterstiques_desitjables_dun_sgbd/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

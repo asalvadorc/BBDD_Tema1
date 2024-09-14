@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema1/BD-T01_Introduccio/5_arquitectura_a_3_nivells/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>4. Arquitectura a 3 nivells - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "4. Arquitectura a 3 nivells";
+        var mkdocs_page_input_path = "BD-T01_Introduccio/5_arquitectura_a_3_nivells.md";
+        var mkdocs_page_url = "/BBDD_Tema1/BD-T01_Introduccio/5_arquitectura_a_3_nivells/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Tema 1-Introducció Bases de Dades</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../objectius/">Objectius</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../1_fitxers_tradicionals/">1. Fitxers tradicionals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2_concepte_de_base_de_dades/">2. Concepte de Base de Dades</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../3_caracterstiques_desitjables_dun_sgbd/">3. Característiques desitjables d'un SGBD</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">4. Arquitectura a 3 nivells</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../4_models_de_dades/">5. Models de dades</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../6_llenguatges_del_sgbd/">6. Llenguatges del SGBD</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../7_classificacions_dels_sgbd/">7. Classificacions dels SGBD</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">4. Arquitectura a 3 nivells</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="4-arquitectura-a-3-nivells">4. Arquitectura a 3 nivells</h1>
+<p>Per a estandarditzar l'arquitectura dels SGBD, el comitè <em>ANSI/X3/SPARC</em> va
+proposar una arquitectura a 3 nivells, per assegurar algunes de les
+característiques que hem vist com a desitjables, en concret la de la separació
+entre programes i dades, les múltiples vistes i la utilització d'un catàleg
+per a la descripció de la B.D. Aquest són els 3 nivells:</p>
+<p><img alt="" src="../T1_5_1.png" /></p>
+<ol>
+<li>
+<p>Al <strong>NIVELL INTERN</strong> o <strong>FÍSIC</strong> hi ha un <strong>esquema intern</strong> que descriu l'estructura física d'emmagatzematge de la B.D. S'utilitza un model físic, i descriu tots els detalls per al seu emmagatzematge (on estan els fitxers, quants, estratègies d'accés a les dades, ...). </p>
+</li>
+<li>
+<p>Al <strong>NIVELL CONCEPTUAL</strong> o <strong>LÒGIC</strong> hi ha un <strong>esquema conceptual</strong> , que descriu l'estructura de tota la B.D. per al conjunt dels usuaris. Oculta els detalls de les estructures físiques d'emmagatzematge. S'utilitza un model de dades conceptual o d'implementació </p>
+</li>
+<li>
+<p>Al <strong>NIVELL EXTERN</strong> o <strong>DE VISTES</strong> s'inclouen diversos <strong>esquemes externs</strong> o <strong>vistes d'usuari</strong>. Cada esquema extern descriu la part de la B.D. que interessa a un grup d'usuaris determinat, i oculta la resta de la B.D. S'utilitza també un model conceptual o d'implementació. </p>
+</li>
+</ol>
+<p>Per tant els tres esquemes són distintes maneres de descriure les dades,
+encara que aquestes només existeixen realment en el nivell físic. Però
+l'esquema intern ha de ser totalment transparent als usuaris, i ells han de
+"veure" el seu esquema extern. Qualsevol referència a aquest esquema s'haurà
+de traduir, per part del SGBD, a referències a les dades oportunes de
+l'esquema lògic. I posteriorment s'haurà de traduir en una sol·licitud a
+l'esquema físic. Per exemple, suposem una vista on tenim el nom i l'edat dels
+empleats. Una sol·licitud de tota la vista externa s'haurà de traduir en una
+sol·licitud de les dades correctes de l'esquema lògic, el nom i la data de
+naixement. I per la seua banda s'haurà de traduir en una sol·licitud a
+l'esquema físic, on se sabran on estan exactament les dades, si hi ha índex
+per fer més ràpid l'accés, ... Posteriorment quan ja estan les dades, s'hauran
+de passar al nivell superior, i després de fer el càlcul oportú passar-les al
+nivell extern.</p>
+<p>El procés de transformar sol·licituds i resultats d'un nivell a un altre
+s'anomena correspondència o transformació (<em>mapping</em>). Evidentment consumiran
+temps, però facilitaran el que es pretenia:</p>
+<ul>
+<li>
+<p><strong>Independència lògica respecte a les dades</strong> : es pot modificar l'esquema lògic sense haver de modificar els esquemes externs. Per exemple, en l'esquema lògic puc incorporar un camp per als empleats que siga la data d'ingrés en l'empresa. Això no afectarà per a res a la vista externa d'empleats i edats. </p>
+</li>
+<li>
+<p><strong>Independència física respecte a les dades</strong> : es pot modificar l'esquema físic sense haver de modificar l'esquema lògic, i molt menys els esquemes externs. Així per exemple es pot afegir més espai per a la B.D. incorporant un nou fitxer on es guardaran les coses (Oracle), o s'inclou un nou índex per accedir més ràpidament a les dades per un determinat ordre. </p>
+</li>
+</ul>
+<p>També hem de dir que no sempre els SGBD comercials compleixen estrictament
+aquestos 3 nivells en la seua arquitectura. Sobretot en els més menuts, ja que
+obligatòriament la correspondència entre els nivells tarda temps, i retarda
+els resultats.</p>
+<p>Anem a ampliar l'anterior arquitectura a tres nivells per incorporar tot el
+procés que farem en la construcció d'una B.D.</p>
+<p><img alt="" src="../T1_5_2.png" /></p>
+<p>On hem incorporat, fora de l'arquitectura a 3 nivells, és a dir fora del SGBD,
+l'esquema conceptual, que seria la concepció de la B.D. en un model d'alt
+nivell com el Model E/R. A partir d'ell realitzaríem l'esquema lògic (amb un
+model d'implantació). Després ja es passaria a l'esquema intern, i també als
+esquemes externs.</p>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../3_caracterstiques_desitjables_dun_sgbd/" class="btn btn-neutral float-left" title="3. Característiques desitjables d'un SGBD"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4_models_de_dades/" class="btn btn-neutral float-right" title="5. Models de dades">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../3_caracterstiques_desitjables_dun_sgbd/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4_models_de_dades/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

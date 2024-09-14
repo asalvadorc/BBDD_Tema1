@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://asalvadorc.github.io/BBDD_Tema1/BD-T01_Introduccio/3_caracterstiques_desitjables_dun_sgbd/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>3. Característiques desitjables d'un SGBD - BD - Bases de Dades</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "3. Caracter\u00edstiques desitjables d\u0027un SGBD";
+        var mkdocs_page_input_path = "BD-T01_Introduccio/3_caracterstiques_desitjables_dun_sgbd.md";
+        var mkdocs_page_url = "/BBDD_Tema1/BD-T01_Introduccio/3_caracterstiques_desitjables_dun_sgbd/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logocaminas.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Tema 1-Introducció Bases de Dades</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../objectius/">Objectius</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../1_fitxers_tradicionals/">1. Fitxers tradicionals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2_concepte_de_base_de_dades/">2. Concepte de Base de Dades</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">3. Característiques desitjables d'un SGBD</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../5_arquitectura_a_3_nivells/">4. Arquitectura a 3 nivells</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../4_models_de_dades/">5. Models de dades</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../6_llenguatges_del_sgbd/">6. Llenguatges del SGBD</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../7_classificacions_dels_sgbd/">7. Classificacions dels SGBD</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BD - Bases de Dades</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">3. Característiques desitjables d'un SGBD</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="3-caracteristiques-desitjables-dun-sgbd">3. Característiques desitjables d'un SGBD</h1>
+<p>Ja hem vist algunes característiques que han de tenir els SGBD. Anem a
+completar aquest llista.</p>
+<ul>
+<li>
+<p><strong>Control de redundància</strong>. Ja hem comentat que potser siga convenient en algunes ocasions un poc de redundància. Però en cas que hi haja, aquesta ha d'estar controlada. És a dir, el SGBD hauria de proporcionar mecanismes per a controlar les dades que estan duplicades, i que quan una informació s'actualitze en un lloc, automàticament s'actualitze en els altres.</p>
+</li>
+<li>
+<p><strong>Restricció d'accessos no autoritzats</strong>. Quan molts usuaris utilitzen la B.D., és normal que no tots tinguen autorització per a accedir a tota la informació. Pot haver informació confidencial a la qual pocs usuaris tenen accés, i pot haver informació a la qual un usuari pot tenir accés però que no pot modificar. El SGBD ha de tenir, per tant, un subsistema de seguretat i autorització per a crear usuaris (que s'identifiquen amb una contrasenya) i donar distints permisos d'accés a cadascun.</p>
+</li>
+<li>
+<p><strong>Subministrament de múltiples interfícies per als usuaris</strong>. Com que hi ha molts tipus d'usuaris, amb nivells de coneixements tècnics distints, el SGBD ha d'oferir diferents interfícies: llenguatges de consulta per a usuaris esporàdics, llenguatges de definició i control per a administradors, formularis per a usuaris habituals, ...</p>
+</li>
+<li>
+<p><strong>Compliment de restriccions</strong>. Hi haurà restriccions que han de complir les dades. Per exemple la nota d'un alumne ha d'estar entre 0 i 10; la data de naixement no pot ser posterior a l'actual; el curs on està matriculat un alumne ha de ser un curs existent; un alumne que estiga de baixa ha de tenir contingut en la data de baixa, o no se li poden posar notes; ... Algunes d'aquestes restriccions les suportarà directament el SGBD. Altres requeriran verificació per mig de programa quan s'introduesca o es modifique la dada.</p>
+</li>
+<li>
+<p><strong>Recolzament i recuperació</strong>. Tot SGBD ha de comptar amb recursos per a recuperar-se d'errades del hardware o del software i deixar les dades com estaven abans de la fallida.</p>
+</li>
+</ul>
+<p>Llicenciat sota la  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Llicència Creative Commons Reconeixement NoComercial
+CompartirIgual 3.0</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2_concepte_de_base_de_dades/" class="btn btn-neutral float-left" title="2. Concepte de Base de Dades"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../5_arquitectura_a_3_nivells/" class="btn btn-neutral float-right" title="4. Arquitectura a 3 nivells">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2_concepte_de_base_de_dades/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../5_arquitectura_a_3_nivells/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
